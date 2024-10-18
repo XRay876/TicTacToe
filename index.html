@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic-Tac-Toe Game</title>
+        <style>
+            
+            body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            }
+            #game-board {
+            display: inline-block;
+            margin-top: 20px;
+            }
+            .row {
+            display: flex;
+            }
+            .cell {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000;
+            line-height: 60px;
+            font-size: 2em;
+            cursor: pointer;
+            }
+            #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            }
+            #controls {
+            margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Tic-Tac-Toe Game: Human vs Computer</h1>
+
+        <div id="controls">
+            <label for="human-sign">Choose your sign:</label>
+            <select id="human-sign">
+                <option value="X">X</option>
+                <option value="O">O</option>
+            </select>
+            <br><br>
+            <label for="first-player">Who goes first:</label>
+            <select id="first-player">
+                <option value="human">Human</option>
+                <option value="computer">Computer</option>
+            </select>
+            <br><br>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <div id="game-board" style="display: none;"></div>
+
+        <div id="message"></div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
